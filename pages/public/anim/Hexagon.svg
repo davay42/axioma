@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke: #eee;
+      }
+
+      .cls-2 {
+        stroke: #00a99d;
+      }
+
+      .cls-3 {
+        stroke: #8cc63f;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: #3fa9f5;
+      }
+
+      .cls-5 {
+        stroke: #489c27;
+      }
+
+      .cls-6 {
+        stroke: #004619;
+      }
+
+      .cls-7 {
+        stroke: #006837;
+      }
+
+      .cls-8 {
+        fill: #006837;
+      }
+
+      .cls-9 {
+        fill: #004619;
+      }
+
+      .cls-10 {
+        fill: #999;
+      }
+
+       * {
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  stroke-dasharray: 2000;
+    }
+
+  #circles { }
+    .cls-1 {animation-name:circles}
+   #cir-tc { animation-name:circle-top }
+   #cir-tr { animation-delay:1s; }
+   #cir-br { animation-delay:1.5s; }
+   #cir-bc { animation-delay:2s; }
+   #cir-bl { animation-delay:2.5s; }
+   #cir-tl { animation-delay:3s; }
+  #up { animation-name:up-down }
+  #down { animation-name:up-down }
+  #Inner { animation-name:inner }
+   #outer { animation-name:outer }
+  #R { animation-name:r }
+  #r-2 { animation-name:r-2 }
+  #small-hexagon { animation-name:small-hexa }
+  #big-hexagon { animation-name:big-hexa }
+  #Hexagon { animation-name:hexa }
+  #center { animation-name:center }
+  #hexagon-dots {  }
+  .cls-8 {animation-name:dots; }
+   #hd6 { animation-delay:1.8s; }
+   #hd5 { animation-name:top-dot; }
+   #hd4 { animation-delay:0.2s; }
+   #hd3 { animation-delay:0.6s; }
+   #hd2 { animation-delay:1.0s; }
+   #hd1 { animation-delay:1.4s; }
+  #big-dots {  }
+.cls-9 {animation-name:big-dots}
+   #bd6 {  }
+   #bd5 { animation-delay:0.4s; }
+   #bd4 { animation-delay:0.8s; }
+   #bd3 { animation-delay:1.2s; }
+   #bd2 { animation-delay:1.6s; }
+   #bd1 { animation-delay:2.0s; }
+  #small-dots {  }
+.cls-10 {animation-name:small-dots}
+   #sd6 {  }
+   #sd5 { animation-delay:0.2s; }
+   #sd4 { animation-delay:0.4s; }
+   #sd3 { animation-delay:0.6s; }
+   #sd2 { animation-delay:0.8s; }
+   #sd1 { animation-delay:1.0s; }
+
+@keyframes center {
+    0%,90%,100% { opacity: 0 }
+    5%,85% { opacity: 1 }
+}
+
+@keyframes r {
+    0% { stroke-dashoffset: 2000;
+  opacity:1}
+  5% { stroke-dashoffset: 2000; }
+    10% { stroke-dashoffset: 0; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+@keyframes outer {
+    0% { stroke-dashoffset: 2000; opacity: 1  }
+    7% { stroke-dashoffset: 2000;
+  opacity:1}
+    15% { stroke-dashoffset: 0;  }
+    80% { opacity: 1; }
+    90% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+@keyframes top-dot {
+    0% { opacity: 0 }
+    5% { opacity: 0 }
+    10% { opacity: 1}
+    70% { opacity: 1 }
+    80% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes dots {
+    0% { opacity: 0 }
+    15% { opacity: 0 }
+    20% { opacity: 1}
+    70% { opacity: 1 }
+    80% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+@keyframes big-dots {
+    0% { opacity: 0 }
+    20% { opacity: 0 }
+    25% { opacity: 1}
+    60% { opacity: 1 }
+    70% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+@keyframes circle-top {
+    0%,10% { stroke-dashoffset: 2000; opacity: 1  }
+    20% { stroke-dashoffset: 0;  }
+    40% { opacity: 1; }
+    50%,100% { opacity: 0; }
+}
+
+@keyframes circles {
+    0%,10% { stroke-dashoffset: 2000; opacity: 1  }
+    20% { stroke-dashoffset: 0;  }
+    40% { opacity: 1; }
+    50%,to { opacity: 0; }
+}
+
+
+@keyframes hexa {
+   0% { stroke-dashoffset: 2000; opacity: 1  }
+    40% { stroke-dashoffset: 2000;
+  opacity:1}
+    50% { stroke-dashoffset: 0;  }
+    95% { opacity: 1; }
+    100% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes big-hexa {
+   0% { stroke-dashoffset: 2000; opacity: 1  }
+    45% { stroke-dashoffset: 2000;
+  opacity:0.2}
+    55% { stroke-dashoffset: 0; opacity:1 }
+    75% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes small-hexa {
+   0% { opacity: 0  }
+    55% { opacity:0 }
+    65% { opacity:1 }
+    75% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes r-2 {
+    0% { stroke-dashoffset: 2000;
+  opacity:1}
+  70% { stroke-dashoffset: 2000; }
+    80% { stroke-dashoffset: 0; }
+    80% { opacity: 1; }
+    90% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes inner {
+    0% { stroke-dashoffset: 2000; opacity: 1  }
+    75% { stroke-dashoffset: 2000;
+  opacity:1}
+    85% { stroke-dashoffset: 0;  }
+    85% { opacity: 1; }
+    95% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes up-down {
+   0% { stroke-dashoffset: 2000; opacity: 1  }
+    50% { stroke-dashoffset: 2000;
+  opacity:1}
+    60% { stroke-dashoffset: 0;  }
+    70% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes small-dots {
+    0%,55%,75%,100% { opacity: 0 }
+    65% { opacity: 1}
+}
+
+@keyframes scribe {
+    0% { stroke-dashoffset: 2000; opacity: 1  }
+    0% { stroke-dashoffset: 2000;
+  opacity:0.2}
+    5% { stroke-dashoffset: 0;  }
+    95% { opacity: 0.2; }
+    100% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade {
+    0% { opacity: 0 }
+    5% { opacity: 0.2 }
+    50% { opacity: 0.1}
+    95% { opacity: 0.2 }
+    100% { opacity: 0 }
+}
+
+    </style>
+  </defs>
+  <title>Hexagon</title>
+  <g id="_10-Hexagon" data-name="10-Hexagon">
+    <g id="circles">
+      <path id="cir-tc" class="cls-1" d="M432,444.76A178.49,178.49,0,1,1,610.49,266.27,178.49,178.49,0,0,1,432,444.76"/>
+      <path id="cir-tr" class="cls-1" d="M432.23,265.89a178.55,178.55,0,1,1-1,177.66,177.67,177.67,0,0,1,1-177.66"/>
+      <path id="cir-br" class="cls-1" d="M585.56,355.59a178.41,178.41,0,1,1-89.7,24.74,178.49,178.49,0,0,1,89.7-24.74"/>
+      <path id="cir-bc" class="cls-1" d="M587,534.77a178.49,178.49,0,1,1-243.5-66.54A178.49,178.49,0,0,1,587,534.77"/>
+      <path id="cir-bl" class="cls-1" d="M432,623.36l-.77,1.33a178.64,178.64,0,1,1,.77-1.33"/>
+      <path id="cir-tl" class="cls-1" d="M276.63,534.07A178.49,178.49,0,1,1,403,482.47a177.94,177.94,0,0,1-126.33,51.61"/>
+    </g>
+    <polyline id="up" class="cls-2" points="432 266.27 586.58 534.01 277.42 534.01 432 266.27"/>
+    <polyline id="down" class="cls-2" points="432 623.25 277.42 355.51 586.58 355.51 432 623.25"/>
+    <path id="Inner" class="cls-3" d="M585.19,444A153.89,153.89,0,1,1,431.31,290.11,153.89,153.89,0,0,1,585.19,444"/>
+    <path id="outer" class="cls-4" d="M432,266.27A178.49,178.49,0,1,1,253.51,444.76,178.49,178.49,0,0,1,432,266.27"/>
+    <line id="R" class="cls-4" x1="431.31" y1="444" x2="432" y2="266.27"/>
+    <line id="r-2" data-name="r" class="cls-3" x1="431.31" y1="444" x2="585.19" y2="444"/>
+    <polyline id="small-hexagon" class="cls-5" points="534.79 444.76 483.4 355.74 380.6 355.74 329.21 444.76 380.6 533.78 483.4 533.78 534.79 444.76"/>
+    <polyline id="big-hexagon" class="cls-6" points="122.92 444.76 277.46 712.43 586.54 712.43 741.08 444.76 586.54 177.09 277.46 177.09 122.92 444.76"/>
+    <polyline id="Hexagon" class="cls-7" points="432 266.27 277.42 355.51 277.42 534.01 432 623.25 586.58 534.01 586.58 355.51 432 266.27"/>
+    <circle id="center" class="cls-8" cx="431.31" cy="444" r="5"/>
+    <g id="hexagon-dots">
+      <circle id="hd6" class="cls-8" cx="277.42" cy="355.58" r="5"/>
+      <circle id="hd5" class="cls-8" cx="432" cy="266.28" r="5"/>
+      <circle id="hd4" class="cls-8" cx="586.58" cy="355.74" r="5"/>
+      <circle id="hd3" class="cls-8" cx="585.19" cy="534.07" r="5"/>
+      <circle id="hd2" class="cls-8" cx="432" cy="623.35" r="5"/>
+      <circle id="hd1" class="cls-8" cx="277.42" cy="534.12" r="5"/>
+    </g>
+    <g id="big-dots">
+      <circle id="bd6" class="cls-9" cx="586.38" cy="177.38" r="5"/>
+      <circle id="bd5" class="cls-9" cx="740.88" cy="444.82" r="5"/>
+      <circle id="bd4" class="cls-9" cx="586.12" cy="712.25" r="5"/>
+      <circle id="bd3" class="cls-9" cx="277.57" cy="709.86" r="5"/>
+      <circle id="bd2" class="cls-9" cx="123.12" cy="444.82" r="5"/>
+      <circle id="bd1" class="cls-9" cx="277.49" cy="177.38" r="5"/>
+    </g>
+    <g id="small-dots">
+      <circle id="sd6" class="cls-10" cx="380.89" cy="355.51" r="5"/>
+      <circle id="sd5" class="cls-10" cx="483.35" cy="355.34" r="5"/>
+      <circle id="sd4" class="cls-10" cx="534.79" cy="444.76" r="5"/>
+      <circle id="sd3" class="cls-10" cx="483.35" cy="534.12" r="5"/>
+      <circle id="sd2" class="cls-10" cx="380.89" cy="534.01" r="5"/>
+      <circle id="sd1" class="cls-10" cx="329.21" cy="445.82" r="5"/>
+    </g>
+  </g>
+</svg>

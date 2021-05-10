@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 506 506">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #e6e6e6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>2-Line</title>
+  <g id="_2" data-name="2">
+    <g id="Line">
+      <path data-ignore="true" id="Dot-l" class="cls-1" d="M117.5,253A2,2 0,1,1 121.5,253A2,2 0,1,1 117.5,253"></path>
+      <path data-ignore="true" id="Dot-r" class="cls-1" d="M384.5,253A2,2 0,1,1 388.5,253A2,2 0,1,1 384.5,253"></path>
+      <path id="Line-2" data-name="Line" class="cls-2 mpONoaWD_0" d="M121.5,253L386.5,253"></path>
+    </g>
+  </g>
+<style>.mpONoaWD_0{stroke-dasharray:265 267;stroke-dashoffset:266;animation:mpONoaWD_draw_0 10800ms ease-in-out 0ms infinite,mpONoaWD_fade 10800ms linear 0ms infinite;}@keyframes mpONoaWD_draw{100%{stroke-dashoffset:0;}}@keyframes mpONoaWD_fade{0%{stroke-opacity:1;}72.22222222222223%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes mpONoaWD_draw_0{7.4074074074074066%{stroke-dashoffset: 266}44.44444444444444%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

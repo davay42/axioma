@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4, .cls-5, .cls-8 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #999;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #b3b3b3;
+      }
+
+      .cls-3 {
+        stroke: #29abe2;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: #8cc63f;
+      }
+
+      .cls-5, .cls-8 {
+        stroke: #fd0;
+      }
+
+      .cls-5 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        fill: #fd0;
+      }
+
+      .cls-7 {
+        fill: #999;
+      }
+
+      .cls-8 {
+        stroke-width: 4px;
+      }
+
+      .cls-9 {
+        fill: #8cc63f;
+      }
+
+         * {
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+
+   #circle-r { animation-name: grey-scribe; stroke-dasharray: 2000; }
+   #circle-l { animation-name: grey-scribe; stroke-dasharray: 2000;
+     animation-delay: 0.3s;
+}
+   #hor-l { animation-name: hor; stroke-dasharray: 2000; }
+   #vert { animation-name: vert-scribe; stroke-dasharray: 2000; }
+   #small-circle { animation-name: small-circle; stroke-dasharray: 2000;}
+   #square { animation-name: square;  stroke-dasharray: 2000; }
+   #diag-r, #diag-l { animation-name: diag; stroke-dasharray: 2000; }
+   #diag-l { animation-delay: 0.5s; }
+   #circles { }
+    #outer{ animation-name: outer; stroke-dasharray: 2000;}
+    #inner { animation-name: inner; stroke-dasharray: 2000;}
+    #R { animation-name: R; stroke-dasharray: 2000;}
+    #r-2 { animation-name: r; stroke-dasharray: 2000;}
+   #right-center { animation-name: right-center; }
+   #left-center { animation-name: left-center; }
+   #sq-tl, #sq-br, #sq-bl { animation-name: dots; }
+    #sq-tl { animation-delay: 0.9s; }
+    #sq-br { animation-delay: 0.3s; }
+    #sq-bl { animation-delay: 0.6s; }
+    #sq-tr { animation-name: dot; }
+   #center { animation-name: center; }
+   #angles, #marks {animation-name: marks;  }
+   #marks { }
+   #grey { }
+    #grey-1 { animation-name: grey15; }
+    #grey-5 { animation-name: grey15; animation-delay: 0.6s; }
+    #grey-2 { animation-name: grey24; }
+    #grey-4 { animation-name: grey24; animation-delay: 0.6s; }
+    #grey-3 { animation-name: grey3; }
+
+
+
+@keyframes stopped {
+    0% {opacity:0}
+    5% { opacity: 0.1 }
+    90% { opacity: 0.1 }
+    100% { opacity: 0 }
+}
+
+@keyframes center {
+    0% { opacity: 0 }
+    5% { opacity: 1 }
+    65% { opacity: 1 }
+    75% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes r {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    4% { stroke-dashoffset: 2000; opacity: 1; }
+    10% { stroke-dashoffset: 0; opacity: 1; }
+    60% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes hor {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    10% { stroke-dashoffset: 2000; opacity: 1; }
+    15% { stroke-dashoffset: 0; opacity: 1; }
+    60% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes right-center {
+    0% { opacity: 0 }
+    4% { opacity: 0 }
+    10% { opacity: 1 }
+    45% { opacity: 1 }
+    55% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes left-center {
+    0% { opacity: 0 }
+    10% { opacity: 0 }
+    15% { opacity: 1 }
+    45% { opacity: 1 }
+    55% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes inner {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    8% { stroke-dashoffset: 2000; opacity: 1; }
+    15% { stroke-dashoffset: 0; opacity: 1; }
+    60% { stroke-dashoffset: 0; opacity: 1; }
+    70% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes grey-scribe {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    12% { stroke-dashoffset: 2000; opacity: 1; }
+    20% { stroke-dashoffset: 0; opacity: 1; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes grey15 {
+    0% { opacity: 0 }
+    15% { opacity: 0 }
+    20% { opacity: 1 }
+    40% { opacity: 1 }
+    60% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes vert-scribe {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    18% { stroke-dashoffset: 2000; opacity: 1; }
+    25% { stroke-dashoffset: 0; opacity: 1; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes grey3 {
+    0% { opacity: 0 }
+    18% { opacity: 0 }
+    25% { opacity: 1 }
+    40% { opacity: 1 }
+    60% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes small-circle {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    22% { stroke-dashoffset: 2000; opacity: 1; }
+    28% { stroke-dashoffset: 0; opacity: 1; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes grey24 {
+    0% { opacity: 0 }
+    25% { opacity: 0 }
+    30% { opacity: 1 }
+    40% { opacity: 1 }
+    60% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes R {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    30% { stroke-dashoffset: 2000; opacity: 1; }
+    35% { stroke-dashoffset: 0; opacity: 1; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes dot {
+    0% { opacity: 0 }
+    32% { opacity: 0 }
+    36% { opacity: 1 }
+    60% { opacity: 1 }
+    70% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes outer {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    35% { stroke-dashoffset: 2000; opacity: 1; }
+    42% { stroke-dashoffset: 0; opacity: 1; }
+    60% { opacity: 1; }
+    70% { opacity: 0; stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
+}
+
+@keyframes diag {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    40% { stroke-dashoffset: 2000; opacity: 1; }
+    45% { stroke-dashoffset: 0; opacity: 1; }
+    50% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { stroke-dashoffset: 2000; opacity: 0; }
+}
+
+@keyframes dots {
+    0% { opacity: 0 }
+    35% { opacity: 0 }
+    40% { opacity: 1 }
+    60% { opacity: 1 }
+    70% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes square {
+    0% { stroke-dashoffset: 2000; opacity: 0; }
+    40% { stroke-dashoffset: 2000; opacity: 1; }
+    50% { stroke-dashoffset: 0; opacity: 1; }
+    90% { opacity: 1; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
+}
+
+@keyframes marks {
+    0% { opacity: 0 }
+    70% { opacity: 0 }
+    75% { opacity: 1 }
+    82% { opacity: 1 }
+    88% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+    </style>
+  </defs>
+  <title>Square</title>
+  <g id="_08-Square" data-name="08-Square">
+    <path id="circle-r" class="cls-1" d="M400,300A166.83,166.83,0,1,1,566.83,466.83,166.83,166.83,0,0,1,400,300"/>
+    <path id="circle-l" class="cls-1" d="M400,300A166.83,166.83,0,1,1,233.17,133.17,166.83,166.83,0,0,1,400,300"/>
+    <line id="vert" class="cls-1" x1="483.41" y1="155.5" x2="483.41" y2="444.5"/>
+    <path id="small-circle" class="cls-1" d="M400,300a83.41,83.41,0,1,1,83.41,83.41A83.41,83.41,0,0,1,400,300"/>
+    <g id="angles">
+      <rect id="a-rt" class="cls-2" x="233.17" y="133.17" width="14.44" height="14.44" transform="translate(480.78 280.78) rotate(180)"/>
+      <rect id="a-rt-2" data-name="a-rt" class="cls-2" x="233.17" y="452.39" width="14.44" height="14.44" transform="translate(480.78 919.22) rotate(180)"/>
+      <rect id="a-rt-3" data-name="a-rt" class="cls-2" x="552.39" y="452.39" width="14.44" height="14.44" transform="translate(1119.22 919.22) rotate(180)"/>
+      <rect id="a-rt-4" data-name="a-rt" class="cls-2" x="552.39" y="133.17" width="14.44" height="14.44" transform="translate(1119.22 280.78) rotate(180)"/>
+    </g>
+    <g id="hor">
+      <line id="hor-l" class="cls-1" x1="400" y1="300" x2="233.03" y2="300"/>
+    </g>
+    <line id="diag-r" class="cls-1" x1="232.96" y1="467.04" x2="566.83" y2="133.17"/>
+    <line id="diag-l" class="cls-1" x1="566.83" y1="466.83" x2="233.17" y2="133.17"/>
+    <g id="circles">
+      <path id="outer" class="cls-3" d="M566.42,133.79A234.47,234.47,0,0,1,635.31,300.1c0,129.9-105.3,235.2-235.2,235.2S164.9,430,164.9,300.1,270.2,64.9,400.1,64.9a234.47,234.47,0,0,1,166.31,68.89"/>
+      <path id="inner" class="cls-4" d="M566.83,300A166.83,166.83,0,1,0,400,466.83,166.83,166.83,0,0,0,566.83,300"/>
+      <line id="R" class="cls-3" x1="400" y1="300" x2="566.83" y2="133.17"/>
+      <line id="r-2" data-name="r" class="cls-4" x1="400" y1="300" x2="566.83" y2="300"/>
+    </g>
+    <g id="marks">
+      <line class="cls-5" x1="399.9" y1="127.17" x2="399.9" y2="139.17"/>
+      <line class="cls-5" x1="400.1" y1="460.83" x2="400.1" y2="472.83"/>
+      <line class="cls-5" x1="239.03" y1="300" x2="227.03" y2="300"/>
+      <line class="cls-5" x1="572.83" y1="299.94" x2="560.83" y2="299.94"/>
+    </g>
+    <g id="sq-dots">
+      <circle id="sq-tl" class="cls-6" cx="233.17" cy="133.17" r="5"/>
+      <circle id="sq-br" class="cls-6" cx="566.83" cy="466.83" r="5"/>
+      <circle id="sq-bl" class="cls-6" cx="233.17" cy="466.83" r="5"/>
+      <circle id="sq-tr" class="cls-6" cx="566.83" cy="133.17" r="5"/>
+    </g>
+    <circle id="center" class="cls-6" cx="400" cy="300" r="5"/>
+    <g id="grey">
+      <circle id="grey-1" class="cls-7" cx="483.41" cy="155.5" r="5"/>
+      <circle id="grey-5" class="cls-7" cx="483.41" cy="444.5" r="5"/>
+      <circle id="grey-2" class="cls-7" cx="483.41" cy="216.59" r="5"/>
+      <circle id="grey-4" class="cls-7" cx="483.41" cy="383.41" r="5"/>
+      <circle id="grey-3" class="cls-7" cx="483.41" cy="300" r="5"/>
+    </g>
+    <polyline id="square" class="cls-8" points="566.83 133.17 566.83 466.83 233.17 466.83 233.17 133.17 566.83 133.17"/>
+    <circle id="left-center" class="cls-9" cx="233.03" cy="300" r="5"/>
+    <circle id="right-center" class="cls-9" cx="566.83" cy="300" r="5"/>
+  </g>
+</svg>
