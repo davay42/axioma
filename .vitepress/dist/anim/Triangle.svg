@@ -1,0 +1,461 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbb03b;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke: rgba(0,0,0,0.5);
+        stroke-width: 1px;
+      }
+
+      .cls-3 {
+        stroke: #f15a24;
+        stroke-width: 4px;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke: #fbb03b;
+      }
+
+      .cls-5 {
+        stroke: #29abe2;
+      }
+
+      .cls-6 {
+        stroke: #8cc63f;
+      }
+
+      .cls-7 {
+        fill: #f15a24;
+      }
+
+      * {
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-iteration-count: infinite;
+}
+#left-center-2,
+#right-center-2 {
+    animation-name: centers;
+}
+#right-center-2 {
+    animation-delay: 0.4s
+}
+#center {
+    animation-name: center;
+}
+#top-cross {
+    animation-name: top-cross;
+}
+#midpoints,
+#crosses {
+    animation-name: crosses;
+}
+#top-cross-2,
+#bottom-cross {
+    animation-name: vert;
+}
+#top-cross-2 {
+    animation-delay: 0.25s
+}
+#bottom-cross {
+    animation-delay: 0.5s
+}
+#verticals {
+    animation-name: ver-scribe;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transform-origin: 50% 50%;
+    opacity: 0;
+}
+#vertical-line {
+    animation-name: ver-scribe;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transform-origin: 50% 50%;
+    opacity: 0;
+}
+#right-circle,
+#left-circle {
+    animation-name: circle-scribe;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transform-origin: 50% 50%;
+}
+#right-circle {
+    animation-delay: 0.5s
+}
+#right-circle-2 {
+    animation-name: circle-top;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transform-origin: 50% 50%;
+}
+#r-2,
+#R {
+    animation-name: r-scribe;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transform-origin: 50% 50%;
+}
+#r-2 {
+    animation-delay: 1s
+}
+#right-circle-2 {
+    animation-name: circle-top;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transform-origin: 50% 50%;
+}
+#marks,
+#angles {
+    animation-name: marks;
+}
+#tri-l,
+#tri-r {
+    animation-name: tri;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transform-origin: 50% 50%;
+}
+#tri-b {
+    animation-name: a;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transform-origin: 50% 50%;
+}
+#inner-circle,
+#external {
+    animation-name: circles-scribe;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    transform-origin: 50% 50%;
+}
+#inner-circle {
+    animation-delay: 1s;
+}
+@keyframes top-cross {
+    0% {
+        opacity: 0
+    }
+    15% {
+        opacity: 0
+    }
+    20% {
+        opacity: 1
+    }
+    60% {
+        opacity: 1
+    }
+    70% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes vert {
+    0% {
+        opacity: 0
+    }
+    30% {
+        opacity: 0
+    }
+    45% {
+        opacity: 1
+    }
+    60% {
+        opacity: 1
+    }
+    70% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes crosses {
+    0% {
+        opacity: 0
+    }
+    30% {
+        opacity: 0
+    }
+    35% {
+        opacity: 1
+    }
+    42% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes ver-scribe {
+    0% {
+        stroke-dashoffset: 1000;
+        opacity: 0;
+    }
+    30% {
+        stroke-dashoffset: 1000;
+        opacity: 0.6;
+    }
+    33% {
+        stroke-dashoffset: 0;
+        opacity: 0.6;
+    }
+    37% {
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 1000;
+    }
+}
+@keyframes circle-scribe {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+    10% {
+        stroke-dashoffset: 2000;
+    }
+    15% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    50% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circles-scribe {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+    53% {
+        stroke-dashoffset: 2000;
+        opacity: 1;
+    }
+    65% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    90% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle-top {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+    20% {
+        stroke-dashoffset: 2000;
+    }
+    30% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    50% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes r-scribe {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+    50% {
+        stroke-dashoffset: 2000;
+        opacity: 1;
+    }
+    60% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    70% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes marks {
+    0% {
+        opacity: 0
+    }
+    35% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0.6
+    }
+    45% {
+        opacity: 0.6
+    }
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes center {
+    0% {
+        opacity: 0
+    }
+    35% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    60% {
+        opacity: 1
+    }
+    70% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes tri {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+    25% {
+        stroke-dashoffset: 2000;
+    }
+    35% {
+        stroke-dashoffset: 0;
+    }
+    80% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes centers {
+    0% {
+        opacity: 0
+    }
+    10% {
+        opacity: 1
+    }
+    20% {
+        opacity: 1
+    }
+    60% {
+        opacity: 1
+    }
+    70% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+@keyframes a {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+    7.5% {
+        stroke-dashoffset: 2000;
+    }
+    15% {
+        stroke-dashoffset: 0;
+    }
+    80% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+    }
+}
+    </style>
+  </defs>
+  <title>7-triangle</title>
+  <g id="_6" data-name="6">
+    <g id="triangle">
+      <g id="angles">
+        <path class="cls-1" d="M583,564.75H551.83A31.17,31.17,0,0,1,567.05,538Z"/>
+        <path class="cls-1" d="M318,564.75h31A31.17,31.17,0,0,0,333.78,538Z"/>
+        <path class="cls-1" d="M450.5,335.26l-15.93,27.39A31.17,31.17,0,0,0,450.5,367a26.89,26.89,0,0,0,15.9-5Z"/>
+      </g>
+      <g id="circles">
+        <path id="right-circle" class="cls-2" d="M318,564.75c0,146.36,118.64,265,265,265s265-118.64,265-265-118.64-265-265-265-265,118.64-265,265"/>
+        <path id="right-circle-2" data-name="right-circle" class="cls-2" d="M318,564.78A263.78,263.78,0,0,0,450.5,600.25c146.36,0,265-118.64,265-265s-118.64-265-265-265-265,118.64-265,265A264.89,264.89,0,0,0,318,564.78"/>
+        <path id="left-circle" class="cls-2" d="M583,564.75c0-146.36-118.64-265-265-265S53,418.39,53,564.75s118.64,265,265,265,265-118.64,265-265"/>
+      </g>
+      <g id="tri">
+        <line id="tri-b" class="cls-3" x1="318" y1="564.75" x2="583" y2="564.75"/>
+        <line id="tri-l" class="cls-3" x1="318" y1="564.75" x2="450.5" y2="335.25"/>
+        <line id="tri-r" class="cls-3" x1="583" y1="564.75" x2="450.5" y2="335.25"/>
+      </g>
+      <g id="verticals">
+        <polyline id="vertical-right" class="cls-4" points="318 564.75 517.41 449.96 716.07 335.26"/>
+        <polyline id="vertical-left" class="cls-4" points="583 564.75 383.52 450 184.76 335.25"/>
+        <polyline id="vertical" class="cls-4" points="450.49 335.25 450.49 564.75 450.49 795.09"/>
+      </g>
+      <line id="R" class="cls-5" x1="450.45" y1="488.5" x2="450.5" y2="335.25"/>
+      <line id="r-2" data-name="r" class="cls-6" x1="450.45" y1="488.5" x2="450.5" y2="565.25"/>
+      <path id="inner-circle" class="cls-6" d="M450.36,564.75a76.48,76.48,0,1,1,76.48-76.48,76.48,76.48,0,0,1-76.48,76.48"/>
+      <path id="external" class="cls-5" d="M450.35,335.26c-84.59,0-153.17,68.63-153.17,153.29s68.58,153.29,153.17,153.29,153.17-68.63,153.17-153.29S534.95,335.26,450.35,335.26"/>
+      <g id="marks">
+        <line class="cls-3" x1="450.5" y1="556.88" x2="450.5" y2="573.62"/>
+        <line class="cls-3" x1="376.85" y1="446.06" x2="391.36" y2="454.44"/>
+        <line class="cls-3" x1="524.25" y1="446.06" x2="509.75" y2="454.44"/>
+      </g>
+      <g id="midpoints">
+        <circle id="bot-center" class="cls-1" cx="450.5" cy="565.25" r="6"/>
+        <circle id="left-center" class="cls-1" cx="383.81" cy="450.18" r="6" transform="translate(-197.97 557.48) rotate(-60)"/>
+        <circle id="right-center" class="cls-1" cx="517.01" cy="450.17" r="6" transform="translate(-155.82 318.82) rotate(-30)"/>
+      </g>
+      <circle id="center" class="cls-7" cx="450.5" cy="488.25" r="6" transform="translate(-183.77 290.66) rotate(-30)"/>
+      <g id="points">
+        <circle id="left-center-2" data-name="left-center" class="cls-7" cx="318" cy="564.75" r="6"/>
+        <circle id="right-center-2" data-name="right-center" class="cls-7" cx="583" cy="564.75" r="6"/>
+        <circle id="top-cross" class="cls-7" cx="450.5" cy="335.25" r="6"/>
+      </g>
+      <g id="crosses">
+        <circle id="right-center-3" data-name="right-center" class="cls-1" cx="184.76" cy="335.26" r="6" transform="matrix(0.5, -0.87, 0.87, 0.5, -197.97, 327.64)"/>
+        <circle id="bot-cross" class="cls-1" cx="450.5" cy="795.09" r="6"/>
+        <circle id="right-cross" class="cls-1" cx="716.06" cy="335.25" r="6" transform="translate(-71.69 402.95) rotate(-30)"/>
+      </g>
+    </g>
+  </g>
+</svg>

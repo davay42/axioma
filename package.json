@@ -1,0 +1,43 @@
+{
+  "name": "axioma.center",
+  "version": "1.0.0",
+  "description": "Animated geometry",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev ",
+    "build": "vitepress build ",
+    "serve": "vitepress serve ",
+    "deploy": "sh deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davay42/axioma.center.git"
+  },
+  "keywords": [
+    "geometry",
+    "animation",
+    "svg"
+  ],
+  "author": "davay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davay42/axioma.center/issues"
+  },
+  "homepage": "https://github.com/davay42/axioma.center#readme",
+  "dependencies": {
+    "@vueuse/core": "4.9.2",
+    "vue": "^3.0.11",
+    "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "esbuild-register": "^2.5.0",
+    "vite": "^2.3.0",
+    "pug": "^3.0.2",
+    "vite-plugin-components": "^0.9.0",
+    "vite-plugin-icons": "^0.5.0",
+    "vite-plugin-windicss": "^0.15.10",
+    "vitepress": "^0.13.2",
+    "windicss": "^2.5.14"
+  }
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" id='expanding-circles' width='200' height='200' viewBox='0 0 100 100'>
+<defs>
+  <style type="text/css" >
+
+
+    .circle {
+     animation-duration: 8s;
+     animation-iteration-count: infinite;
+     animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+     transform-origin: 50% 50%;
+    }
+    #circle-1 {
+     animation-name: circle-1;
+    }
+    #circle-2 {
+     animation-delay: .1s;
+     animation-name: circle-2;
+    }
+    #circle-3 {
+     animation-delay: .2s;
+     animation-name: circle-3;
+    }
+    #circle-4 {
+     animation-delay: .2s;
+     animation-name: circle-4;
+    }
+    @keyframes circle-1 {
+     0% {transform:scale(1)}
+     60% {transform:scale(7)}
+     100% {transform:scale(1)}
+    }
+    @keyframes circle-2 {
+     0% {transform:scale(1)}
+     50% {transform:scale(5)}
+     100% {transform:scale(1)}
+    }
+    @keyframes circle-3 {
+      0% {transform:scale(1)}
+     40% {transform:scale(3)}
+     100% {transform:scale(1)}
+    }
+    @keyframes circle-4 {
+
+    }
+
+</style>
+
+</defs>
+
+   <circle class='circle' id='circle-1' cx='50' cy='50' r='5' fill='rgba(255, 255, 255, .25)' />
+   <circle class='circle' id='circle-2' cx='50' cy='50' r='5' fill='rgba(255, 255, 255, .25)' />
+   <circle class='circle' id='circle-3' cx='50' cy='50' r='5' fill='rgba(255, 255, 255, .25)' />
+   <circle class='circle' id='circle-4' cx='50' cy='50' r='5' fill='rgba(255, 255, 255, 1)' />
+
+
+ </svg>

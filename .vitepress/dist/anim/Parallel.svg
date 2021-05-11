@@ -1,0 +1,284 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-5, .cls-6 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-6 {
+        stroke: #29abe2;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-5 {
+        stroke: #7ac943;
+      }
+
+      .cls-3 {
+        fill: #29abe2;
+      }
+
+      .cls-4 {
+        fill: #7ac943;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-width: 4px;
+      }
+
+       * {
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-iteration-count: infinite;
+    }
+
+#green-r, #parallel {
+   animation-name: parallels;
+   stroke-dasharray: 1000;
+ }
+
+#big-circle {
+   animation-name: circle-scribe;
+   stroke-dasharray: 4000;
+ }
+#smaller-circle { animation-name: small-circle-scribe;
+   stroke-dasharray: 4000; }
+
+#dot-bl, #dot-br { animation-name: dot-b; }
+
+#angles, #marks-top, #mark-l { animation-name: marks; }
+
+#line {
+   animation-name: line;
+   stroke-dasharray: 1000;
+ }
+
+#blue-2, #green-2 {
+   animation-name: blue-2;
+   stroke-dasharray: 1000;
+}
+
+#green-2 {
+  animation-name: green-2;
+  stroke-dasharray: 1000;}
+
+#green-l {
+   animation-name: green-l;
+   stroke-dasharray: 1000;
+ }
+
+#dot-br { animation-delay:0.5s }
+#dot-tl { animation-name: dot-tl; }
+#dot-tr { animation-name: dot-tr; }
+#dot-green-2 { animation-name: dot-green; }
+#mark-2, #dot-bl-2, #dot-green-2, #marks-top-2 { animation-name: mark-2; }
+
+#mark-r {animation-name:mark-r}
+#marks-bot {animation-name:marks-bot}
+
+#dot-green-2, #marks-top-2 {animation-name: mark-green-2;}
+
+@keyframes mark-r {
+  0% {opacity:0}
+  15% {opacity:0}
+  20% {opacity:1}
+  25% {opacity:1}
+  30% {opacity:0}
+  60% {opacity:0}
+  70% {opacity:1}
+  80% {opacity:1}
+  95% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes marks-bot {
+  0% {opacity:0}
+  35% {opacity:0}
+  40% {opacity:1}
+  45% {opacity:1}
+  50% {opacity:0}
+  60% {opacity:0}
+  70% {opacity:1}
+  80% {opacity:1}
+  95% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes dot-green {
+  0% {opacity:0}
+  40% {opacity:0}
+  50% {opacity:1}
+  60% {opacity:1}
+  90% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes dot-tr {
+    0% {opacity:0}
+  40% {opacity:0}
+  45% {opacity:1}
+  50% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes line {
+  0% { stroke-dashoffset: 1000; }
+  5% { stroke-dashoffset: 1000; opacity:1; }
+  15% { stroke-dashoffset: 0; opacity:1; }
+  40% {  }
+  90% { opacity:1; }
+  100% { opacity:0; stroke-dashoffset: 0; }
+}
+
+
+@keyframes circle-scribe {
+  0% {stroke-dashoffset: 4000; }
+  20% { stroke-dashoffset: 4000; }
+  25% { stroke-dashoffset: 0; }
+  40% { opacity:1; }
+  60% { opacity:0; }
+  100% { stroke-dashoffset: 0; opacity:0; }
+}
+
+@keyframes small-circle-scribe {
+  0% {stroke-dashoffset: 4000; }
+  40% { stroke-dashoffset: 4000; }
+  45% { stroke-dashoffset: 0; }
+  40% { opacity:1; }
+  60% { opacity:0; }
+  100% { stroke-dashoffset: 0; opacity:0; }
+}
+
+@keyframes dot-tl {
+    0% {opacity:0}
+  10% {opacity:0}
+  15% {opacity:1}
+  60% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes green-l {
+  0% { stroke-dashoffset: 1000; }
+  30% { stroke-dashoffset: 1000; opacity:1; }
+  35% { stroke-dashoffset: 0; opacity:1; }
+  40% {  }
+  90% { opacity:1; }
+  100% { opacity:0; stroke-dashoffset: 0; }
+}
+
+@keyframes green-2 {
+  0% { stroke-dashoffset: 1000; }
+  35% { stroke-dashoffset: 1000; opacity:1; }
+  40% { stroke-dashoffset: 0; opacity:1; }
+  45% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:0; stroke-dashoffset: 0; }
+}
+
+@keyframes mark-green-2 {
+   0% {opacity:0}
+  35% {opacity:0}
+  40% {opacity:1}
+  45% {opacity:1}
+  50% {opacity:0}
+  100% {opacity:0}
+}
+
+
+@keyframes blue-2 {
+  0% { stroke-dashoffset: 1000; }
+  15% { stroke-dashoffset: 1000; opacity:1; }
+  20% { stroke-dashoffset: 0; opacity:1; }
+  25% { opacity:1; }
+  30% { opacity:0; }
+  100% { opacity:0; stroke-dashoffset: 0; }
+}
+
+@keyframes mark-2 {
+   0% {opacity:0}
+  15% {opacity:0}
+  20% {opacity:1}
+  25% {opacity:1}
+  30% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes parallels {
+  0% { stroke-dashoffset: 1000; }
+  45% { stroke-dashoffset: 1000; opacity:1; }
+  55% { stroke-dashoffset: 0; opacity:1; }
+  40% {  }
+  90% { opacity:1; }
+  100% { opacity:0; stroke-dashoffset: 0; }
+}
+
+@keyframes marks {
+  0% {opacity:0}
+  60% {opacity:0}
+  70% {opacity:0.6}
+  80% {opacity:0.6}
+  95% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes dot-b {
+  0% {opacity:0}
+  1% {opacity:0}
+  5% {opacity:1}
+  60% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+
+    </style>
+  </defs>
+  <title>Parallel</title>
+  <g id="_04-Parallels" data-name="04-Parallels">
+    <line id="blue-2" class="cls-1" x1="376.32" y1="358.76" x2="157.04" y2="98.39"/>
+    <line id="green-2" class="cls-2" x1="588.64" y1="604.65" x2="750" y2="828.72"/>
+    <g id="angles">
+      <path id="angle-tr" class="cls-3" d="M714.84,358.76l-20.9,39.81a45,45,0,0,1-24.06-39.65Z"/>
+      <path id="angle-br" class="cls-4" d="M588.62,604.38l-38.06.27q0-.14,0-.27a38.06,38.06,0,0,1,55.58-33.79Z"/>
+      <path id="angle-bl" class="cls-3" d="M248.83,604.65l20.9-39.81a45,45,0,0,1,24.06,39.65Z"/>
+      <path id="angle-tl" class="cls-4" d="M375,359l38.06-.27q0,.14,0,.27a38.06,38.06,0,0,1-55.58,33.79Z"/>
+    </g>
+    <path id="smaller-circle" class="cls-2" d="M749.81,828.84c123.81-89,152-261.54,63-385.35s-261.54-152-385.35-63-152,261.54-63,385.35,261.54,152,385.35,63"/>
+    <path id="big-circle" class="cls-1" d="M156.14,99.1A342.78,342.78,0,0,0,122.19,132C-3.17,271.69,8.41,486.53,148.06,611.89S502.54,725.67,627.9,586,741.68,231.54,602,106.18C474.31-8.48,283.67-8.58,156.14,99.1"/>
+    <line id="green-l" class="cls-5" x1="248.85" y1="604.65" x2="375.05" y2="359.03"/>
+    <line id="line" class="cls-6" x1="251.39" y1="604.65" x2="588.64" y2="604.65"/>
+    <line id="green-r" class="cls-5" x1="588.64" y1="604.65" x2="714.84" y2="359.03"/>
+    <line id="parallel" class="cls-6" x1="375.05" y1="359.03" x2="714.84" y2="359.03"/>
+    <g id="dots">
+      <circle id="dot-bl" class="cls-3" cx="248.85" cy="604.65" r="7"/>
+      <circle id="dot-tr" class="cls-4" cx="714.84" cy="359.03" r="7"/>
+      <circle id="dot-br" class="cls-3" cx="588.64" cy="604.65" r="7"/>
+      <circle id="dot-tl" class="cls-4" cx="375.05" cy="359.03" r="7"/>
+    </g>
+    <g id="marks">
+      <line id="mark-l" class="cls-6" x1="538.85" y1="349.03" x2="538.85" y2="369.03"/>
+      <line id="mark-r" class="cls-6" x1="427.02" y1="594.65" x2="427.02" y2="614.65"/>
+      <g id="marks-top">
+        <line class="cls-5" x1="642.16" y1="479.09" x2="660.3" y2="487.53"/>
+        <line class="cls-5" x1="646.83" y1="469.05" x2="664.97" y2="477.49"/>
+      </g>
+      <g id="marks-bot">
+        <line class="cls-5" x1="302.36" y1="478.88" x2="320.34" y2="487.65"/>
+        <line class="cls-5" x1="307.21" y1="468.93" x2="325.19" y2="477.69"/>
+      </g>
+    </g>
+    <circle id="dot-green-2" class="cls-4" cx="749.36" cy="827.83" r="7"/>
+    <g id="marks-top-2">
+      <line class="cls-2" x1="676.46" y1="708.38" x2="659.98" y2="719.72"/>
+      <line class="cls-2" x1="682.74" y1="717.5" x2="666.26" y2="728.84"/>
+    </g>
+    <circle id="dot-bl-2" class="cls-3" cx="157.04" cy="98.39" r="7"/>
+    <line id="mark-2" class="cls-1" x1="263.49" y1="240.31" x2="278.99" y2="227.68"/>
+  </g>
+</svg>

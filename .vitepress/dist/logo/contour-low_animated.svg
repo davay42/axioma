@@ -1,0 +1,24 @@
+<svg id="Ð¡Ð»Ð¾Ð¹_1" data-name="Ð¡Ð»Ð¾Ð¹ 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: gray;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>contour-low</title>
+  <g id="Line">
+    <path id="A" class="cls-1 zxnDZACh_0" d="M51.74,87.51L8.44,162.49L95.03,162.49L51.74,87.51Z"></path>
+    <path class="cls-1 zxnDZACh_1" d="M105.21,87.51L148.53,162.49L105.21,162.49L148.53,87.51L105.21,87.51Z"></path>
+    <path id="I" class="cls-1 zxnDZACh_2" width="13.63" height="74.99" d="M164.38 87.51 L178.01 87.51 L178.01 162.5 L164.38 162.5 Z"></path>
+    <path id="O" class="cls-1 zxnDZACh_3" d="M191.73,125A37.49,37.49 0,1,1 266.71,125A37.49,37.49 0,1,1 191.73,125"></path>
+    <g id="M">
+      <path class="cls-1 zxnDZACh_4" d="M310.01,87.51L266.72,162.49L353.3,162.49L310.01,87.51Z"></path>
+      <path class="cls-1 zxnDZACh_5" d="M353.3,87.51L310.01,162.49L396.6,162.49L353.3,87.51Z"></path>
+    </g>
+    <path id="A-2" data-name="A" class="cls-1 zxnDZACh_6" d="M450.14,87.51L406.84,162.49L493.43,162.49L450.14,87.51Z"></path>
+  </g>
+<style>.zxnDZACh_0{stroke-dasharray:260 262;stroke-dashoffset:261;animation:zxnDZACh_draw_0 13800ms ease-in-out 0ms infinite,zxnDZACh_fade 13800ms linear 0ms infinite;}.zxnDZACh_1{stroke-dasharray:260 262;stroke-dashoffset:261;animation:zxnDZACh_draw_1 13800ms ease-in-out 0ms infinite,zxnDZACh_fade 13800ms linear 0ms infinite;}.zxnDZACh_2{stroke-dasharray:178 180;stroke-dashoffset:179;animation:zxnDZACh_draw_2 13800ms ease-in-out 0ms infinite,zxnDZACh_fade 13800ms linear 0ms infinite;}.zxnDZACh_3{stroke-dasharray:236 238;stroke-dashoffset:237;animation:zxnDZACh_draw_3 13800ms ease-in-out 0ms infinite,zxnDZACh_fade 13800ms linear 0ms infinite;}.zxnDZACh_4{stroke-dasharray:260 262;stroke-dashoffset:261;animation:zxnDZACh_draw_4 13800ms ease-in-out 0ms infinite,zxnDZACh_fade 13800ms linear 0ms infinite;}.zxnDZACh_5{stroke-dasharray:260 262;stroke-dashoffset:261;animation:zxnDZACh_draw_5 13800ms ease-in-out 0ms infinite,zxnDZACh_fade 13800ms linear 0ms infinite;}.zxnDZACh_6{stroke-dasharray:260 262;stroke-dashoffset:261;animation:zxnDZACh_draw_6 13800ms ease-in-out 0ms infinite,zxnDZACh_fade 13800ms linear 0ms infinite;}@keyframes zxnDZACh_draw{100%{stroke-dashoffset:0;}}@keyframes zxnDZACh_fade{0%{stroke-opacity:1;}78.26086956521739%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes zxnDZACh_draw_0{5.797101449275362%{stroke-dashoffset: 261}12.39084118603104%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes zxnDZACh_draw_1{12.39084118603104%{stroke-dashoffset: 261}18.984580922786716%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes zxnDZACh_draw_2{18.984580922786716%{stroke-dashoffset: 179}23.50672426715172%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes zxnDZACh_draw_3{23.50672426715172%{stroke-dashoffset: 237}29.494143108573546%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes zxnDZACh_draw_4{29.494143108573546%{stroke-dashoffset: 261}36.08788284532922%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes zxnDZACh_draw_5{36.08788284532922%{stroke-dashoffset: 261}42.6816225820849%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes zxnDZACh_draw_6{42.6816225820849%{stroke-dashoffset: 261}49.275362318840585%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b3b3b3;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke: #aaa;
+        stroke-width: 1px;
+      }
+
+      .cls-3 {
+        stroke: #f7931e;
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        stroke: #29abe2;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        stroke: #8cc63f;
+      }
+
+      .cls-6 {
+        fill: #fbb03b;
+      }
+
+      .cls-7 {
+        fill: #8cc63f;
+      }
+
+      * {
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  stroke-dasharray: 2000;
+    }
+
+#right-center, #left-center {
+  animation-name: center;
+}
+
+#right-center {animation-delay:1s}
+
+#top-cross,#top-cross-2,#bottom-cross {
+  animation-name: vert;
+}
+#top-cross-2 { animation-delay:0.5s }
+#bottom-cross { animation-delay:1s }
+
+#horizontal-line {
+   animation-name: hor-scribe;
+ }
+
+#vertical-line {
+   animation-name: ver-scribe;
+ }
+
+#left-circle, #right-circle {
+   animation-name: circle-scribe;
+ }
+#right-circle { animation-delay:0.5s }
+#marks, #angle { animation-name: marks; }
+#vesica { animation-name: vesica; }
+#inner {animation-name:inner}
+#outer {animation-name:inner; animation-delay:0.5s}
+
+/*KEYFRAMES */
+
+@keyframes hor-scribe {
+  from,5% { stroke-dashoffset: 2000; }
+  20% { stroke-dashoffset: 0;
+    opacity:1; }
+  50% { opacity:1; }
+  60%,to { opacity:0; }
+}
+
+@keyframes ver-scribe {
+  0%,20% { stroke-dashoffset: 2000; }
+  30% { stroke-dashoffset: 0; }
+  50% { opacity:1; }
+  60%,to { opacity:0; }
+}
+@keyframes vert {
+  from,15% {opacity:0}
+  20%,75% {opacity:1}
+  85%,to {opacity:0}
+}
+@keyframes circle-scribe {
+  0%,10% { stroke-dashoffset: 2000; }
+  20% {
+    stroke-dashoffset: 0;
+    opacity:1; }
+  75%,100% {
+    opacity:0; }
+}
+@keyframes marks {
+  0%,25% {opacity:0}
+  30%,35% {opacity:1}
+  40%,100% {opacity:0}
+}
+@keyframes center {
+  0% {opacity:0}
+  10%,45% {opacity:1}
+  55%,100% {opacity:0}
+}
+@keyframes vesica {
+  0%,45% {opacity: 0;}
+  65%,90% {opacity: 1;}
+  100% {opacity:0;}
+}
+@keyframes inner {
+  0%,40% { stroke-dashoffset: 2000; }
+  50%,70% {
+    stroke-dashoffset: 0;
+    opacity:1; }
+  80%,100% {
+    opacity:0; }
+}
+
+
+    </style>
+  </defs>
+  <title>Vesica piscis</title>
+  <g id="_06-Vesica_piscis" data-name="06-Vesica piscis">
+    <rect id="angle" class="cls-1" x="450" y="272.55" width="20.07" height="20.07"/>
+    <path id="right-circle" class="cls-2" d="M317.5,292.63c0,146.36,118.64,265,265,265s265-118.64,265-265-118.64-265-265-265-265,118.64-265,265"/>
+    <path id="left-circle" class="cls-2" d="M582.5,292.63c0-146.36-118.64-265-265-265s-265,118.64-265,265,118.64,265,265,265,265-118.64,265-265"/>
+    <path id="vesica" class="cls-3" d="M450,63.09a265.07,265.07,0,0,0,0,459.08,265.07,265.07,0,0,0,0-459.08"/>
+    <line id="vertical-line" class="cls-4" x1="450" y1="63.13" x2="450" y2="522.12"/>
+    <path id="outer" class="cls-4" d="M450.5,63.08c126.84,0,229.67,102.83,229.67,229.67S577.34,522.42,450.5,522.42,220.83,419.59,220.83,292.75,323.66,63.08,450.5,63.08"/>
+    <line id="horizontal-line" class="cls-5" x1="317.5" y1="292.63" x2="582.5" y2="292.63"/>
+    <g id="vert-dots">
+      <circle id="bottom-cross" class="cls-6" cx="450" cy="522.13" r="6"/>
+      <circle id="top-cross" class="cls-6" cx="450" cy="63.13" r="6"/>
+      <circle id="top-cross-2" data-name="top-cross" class="cls-6" cx="450" cy="293.7" r="6"/>
+    </g>
+    <g id="hor-dots">
+      <circle id="right-center" class="cls-7" cx="582.5" cy="292.63" r="6"/>
+      <circle id="left-center" class="cls-7" cx="317.5" cy="292.63" r="6"/>
+    </g>
+    <g id="marks">
+      <line class="cls-5" x1="378" y1="284.38" x2="378" y2="301.13"/>
+      <line class="cls-5" x1="522" y1="284.38" x2="522" y2="301.13"/>
+      <line class="cls-4" x1="441.63" y1="402.75" x2="458.37" y2="402.75"/>
+      <line class="cls-4" x1="441.63" y1="182.71" x2="458.37" y2="182.71"/>
+      <line class="cls-4" x1="441.63" y1="408.69" x2="458.37" y2="408.69"/>
+      <line class="cls-4" x1="441.63" y1="176.62" x2="458.37" y2="176.62"/>
+    </g>
+    <path id="inner" class="cls-5" d="M318.5,292.75a132,132,0,1,1,132,132,132,132,0,0,1-132-132"/>
+  </g>
+</svg>

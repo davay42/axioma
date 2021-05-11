@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fd0a01;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        stroke: #29abe2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      * {
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    animation-iteration-count: infinite;
+    }
+
+#center {
+  animation-name: center;
+}
+
+#cross { animation-name: cross; }
+
+#radius {
+   animation-name: radius-scribe;
+   stroke-dasharray: 1000;
+   stroke-dashoffset: 1000;
+  opacity:0;
+ }
+
+#circle {
+   animation-name: circle-scribe;
+   stroke-dasharray: 2000;
+   stroke-dashoffset: 2000;
+ }
+
+@keyframes center {
+  0% {opacity:0}
+  10% {opacity:1}
+  70% {opacity:1;}
+  80% {opacity:0;}
+  100% {opacity:0;}
+}
+
+@keyframes cross {
+  0% {opacity:0}
+  10% {opacity:0}
+  20% {opacity:1}
+  40% {opacity:1}
+  60% {opacity:0}
+  100% {opacity:0}
+}
+
+@keyframes radius-scribe {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  10% {
+    stroke-dashoffset: 1000;
+  }
+  30% {
+    stroke-dashoffset: 0;
+
+  }
+  40% {
+    opacity:1;
+  }
+  60% {
+    opacity:0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes circle-scribe {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  20% {
+    stroke-dashoffset: 2000;
+  }
+  60% {
+    stroke-dashoffset: 0;
+
+  }
+  70% {
+    stroke-dashoffset: 0;
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    stroke-dashoffset: 0;
+  }
+}
+
+    </style>
+  </defs>
+  <title>Circle</title>
+  <g id="_03-Circle" data-name="03-Circle">
+    <circle id="center" class="cls-1" cx="301" cy="300" r="5"/>
+    <line id="radius" class="cls-2" x1="301" y1="300" x2="566" y2="300"/>
+    <path id="circle" class="cls-3" d="M566,300C566,153.64,447.36,35,301,35S36,153.64,36,300,154.64,565,301,565,566,446.36,566,300"/>
+    <circle id="cross" class="cls-1" cx="566" cy="300" r="5"/>
+  </g>
+</svg>
