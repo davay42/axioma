@@ -10,7 +10,7 @@
 <style>
 html {
   scroll: smooth;
-  @apply max-h-100vh overflow-y-scroll snap snap-mandatory;
+  @apply bg-dark-200 max-h-100vh overflow-y-scroll snap snap-mandatory;
 }
 body {
   color: white;

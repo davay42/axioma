@@ -1,6 +1,6 @@
 <script setup>
 import { useFullscreen } from '@vueuse/core'
-const { toggle } = useFullscreen();
+const { toggle, isSupported } = useFullscreen();
 const first = ref();
 </script>
 
@@ -79,6 +79,7 @@ const first = ref();
   .rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-10.cursor-pointer.transition-all.duration-200.ease(
     class="hover:opacity-100"
     @click="toggle()"
+    v-if="isSupported"
   )
     la-expand
 </template>
