@@ -1,9 +1,10 @@
 import 'virtual:windi.css'
 
 import DefaultTheme from 'vitepress/theme'
+import Layout from './layout.vue'
 
 const theme = {
-  ...DefaultTheme,
+  Layout,
 }
 
 export default theme

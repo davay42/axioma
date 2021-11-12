@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b3b3b3;
+      }
+
+      .cls-2 {
+        fill: red;
+      }
+
+      .cls-10, .cls-3, .cls-4, .cls-6, .cls-8 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke: #4d4d4d;
+      }
+
+      .cls-4 {
+        stroke: #f7931e;
+      }
+
+      .cls-10, .cls-4, .cls-6, .cls-8 {
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: #f7931e;
+      }
+
+      .cls-6 {
+        stroke: #fbb03b;
+      }
+
+      .cls-7 {
+        fill: #fbb03b;
+      }
+
+      .cls-8 {
+        stroke: #ffcb22;
+      }
+
+      .cls-9 {
+        fill: #ffcb22;
+      }
+
+      .cls-10 {
+        stroke: red;
+      }
+
+      #c0 {
+  animation: center 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+}
+
+@keyframes center {
+  0% {opacity:0}
+  20% {opacity:1}
+  50% {opacity:1}
+  60%{opacity:0}
+  100%{opacity:0}
+}
+
+#c1,#c2,#c3,#c4,#c5 {
+  animation: c 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+}
+#c2 {
+  animation-delay: 0.2s;
+}
+#c3 {
+  animation-delay:0.4s;
+}
+#c4 {
+  animation-delay:0.6s;
+}
+#c5 {
+  animation-delay:0.8s;
+}
+
+@keyframes c {
+  0% {opacity:0}
+  30% {opacity:0}
+  40%{opacity:1}
+  60%{opacity:1}
+  80%{opacity:0}
+  100%{opacity:0}
+}
+
+#a-lb,#a-lt,#a-c,#a-rt,#a-rb {
+  animation: angles 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+}
+#a-lt {
+  animation-delay: 0.2s;
+}
+#a-c {
+  animation-delay:0.4s;
+}
+#a-rt {
+  animation-delay:0.6s;
+}
+#a-rb {
+  animation-delay:0.8s;
+}
+
+@keyframes angles {
+  0% {opacity:0}
+  60% {opacity:0}
+  65% {opacity:1}
+  75% {opacity:1}
+  90%{opacity:0}
+  100%{opacity:0}
+}
+
+#o-l,#o-r {
+  animation: o-lr 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+}
+
+@keyframes o-lr {
+  0% {opacity:0}
+  12% {opacity:0}
+  20% {opacity:1}
+  70% {opacity:1}
+  90%{opacity:0}
+  100%{opacity:0}
+}
+
+#a1,#a2,#a3,#a4,#a5 {
+  animation: a 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+#a2 {
+ animation-delay:0.4s;
+}
+#a3 {
+  animation-delay:0.8s;
+}
+#a4 {
+  animation-delay:1.2s;
+}
+#a5 {
+  animation-delay:1.6s;
+}
+
+@keyframes a {
+  0% {stroke-dashoffset: 1000;opacity:1}
+  30% {stroke-dashoffset: 1000;}
+  40% {stroke-dashoffset: 0;}
+  75% {opacity:1}
+  90% {stroke-dashoffset: 0;opacity:0}
+  100% {stroke-dashoffset: 0;opacity:0}
+}
+
+#d-l,#d-r {
+  animation: d 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes d {
+  0% {stroke-dashoffset: 1000;opacity:1}
+  10% {stroke-dashoffset: 1000;}
+  20% {stroke-dashoffset: 0;}
+  80% {opacity:1}
+  100% {stroke-dashoffset: 0;opacity:0}
+}
+
+#o-top,#o-bot {
+  animation: o 10s cubic-bezier(0.645, 0.045, 0.355, 1) infinite both;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes o {
+  0% {stroke-dashoffset: 1000;opacity:1}
+  15% {stroke-dashoffset: 1000;}
+  30% {stroke-dashoffset: 0;}
+  50% {opacity:1}
+  60%{opacity:0}
+  100% {stroke-dashoffset: 0; opacity:0}
+}
+    </style>
+  </defs>
+  <title>4-perpendicular</title>
+  <g id="_4" data-name="4">
+    <g id="perpendiculars">
+      <g id="angles">
+        <rect id="a-lb" class="cls-1" x="61.9" y="181.53" width="14.44" height="14.44" transform="translate(47.72 -11.12) rotate(14)"/>
+        <rect id="a-lt" class="cls-1" x="130.2" y="96.41" width="14.44" height="14.44" transform="translate(58.27 -49.2) rotate(25.6)"/>
+        <rect id="a-c" class="cls-1" x="292.78" y="38.99" width="14.44" height="14.44" transform="translate(120.54 -198.6) rotate(45)"/>
+        <rect id="a-rb" class="cls-1" x="523.22" y="181.53" width="14.44" height="14.44" transform="translate(1090.79 243.57) rotate(166)"/>
+        <rect id="a-rt" class="cls-1" x="454.93" y="96.41" width="14.44" height="14.44" transform="translate(923.7 -2.6) rotate(154.4)"/>
+      </g>
+      <circle id="c0" class="cls-2" cx="300" cy="301" r="5"/>
+      <path id="o-top" class="cls-3" d="M565,301C565,154.64,446.36,36,300,36S35,154.64,35,301"/>
+      <path id="o-bot" class="cls-3" d="M35,301c0,146.36,118.64,265,265,265S565,447.36,565,301"/>
+      <g id="crown">
+        <g id="a1">
+          <line id="_1-2" data-name="1" class="cls-4" x1="565" y1="301" x2="64" y2="180"/>
+          <line id="_1-3" data-name="1" class="cls-4" x1="35" y1="301" x2="64" y2="180"/>
+        </g>
+        <circle id="c1" class="cls-5" cx="64.51" cy="180" r="5"/>
+        <g id="a2">
+          <line id="_2-2" data-name="2" class="cls-6" x1="565" y1="301" x2="134" y2="94"/>
+          <line id="_2-3" data-name="2" class="cls-6" x1="35" y1="301" x2="134" y2="94"/>
+        </g>
+        <circle id="c2" class="cls-7" cx="133.42" cy="94" r="5"/>
+        <g id="a3">
+          <line id="_3-2" data-name="3" class="cls-8" x1="565" y1="301" x2="300" y2="36"/>
+          <line id="_3-3" data-name="3" class="cls-8" x1="35" y1="301" x2="300" y2="36"/>
+        </g>
+        <circle id="c3" class="cls-9" cx="300" cy="36" r="5"/>
+        <g id="a4">
+          <line id="_4-2" data-name="4" class="cls-6" x1="35" y1="301" x2="466" y2="94"/>
+          <line id="_4-3" data-name="4" class="cls-6" x1="565" y1="301" x2="466" y2="94"/>
+        </g>
+        <circle id="c4" class="cls-7" cx="466" cy="94" r="5"/>
+        <g id="a5">
+          <line id="_5" data-name="5" class="cls-4" x1="35" y1="301" x2="536" y2="180"/>
+          <line id="_5-2" data-name="5" class="cls-4" x1="565" y1="301" x2="536" y2="180"/>
+        </g>
+        <circle id="c5" class="cls-5" cx="536.19" cy="180" r="5"/>
+      </g>
+      <circle id="o-r" class="cls-2" cx="565" cy="301" r="5"/>
+      <circle id="o-l" class="cls-2" cx="35" cy="302" r="5"/>
+      <line id="d-l" class="cls-10" x1="299.5" y1="301" x2="35" y2="301"/>
+      <line id="d-r" class="cls-10" x1="299.5" y1="301" x2="564" y2="301"/>
+    </g>
+  </g>
+</svg>
