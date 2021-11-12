@@ -1,3 +1,14 @@
+<template lang="pug">
+.opacity-95
+  .cube
+    .cube__face
+    .cube__face
+    .cube__face
+    .cube__face
+    .cube__face
+    .cube__face
+</template>
+
 <style scoped>
 div.cube,
 .cube div {
@@ -9,8 +20,7 @@ div.cube,
   top: calc(50% - 5em);
   left: calc(50% - 5em);
   transform-style: preserve-3d;
-  isolation: isolate;
-  transform: translateZ(200);
+  transform: translateZ(200px);
   transition: 1s;
   transform-origin: 50% 50%;
   animation: r 20s infinite normal both;
@@ -32,6 +42,7 @@ div.cube,
 }
 
 .cube__face {
+  transform-style: preserve-3d;
   width: 20em;
   height: 20em;
   z-index: 10;
@@ -59,14 +70,3 @@ div.cube,
   transform: rotateX(-90deg) translateZ(10em);
 }
 </style>
-
-<template lang="pug">
-.opacity-95
-  .cube
-    .cube__face
-    .cube__face
-    .cube__face
-    .cube__face
-    .cube__face
-    .cube__face
-</template>

@@ -1,3 +1,36 @@
+<template lang="pug">
+.flex.flex-col.opacity-95
+  .octahedron
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+    span
+      svg(viewBox="0 0 1000 866")
+        use(href="#octa")
+  svg#octaico(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1000 866")
+    defs
+      title Octa
+      polygon#octa.octa(points="500 0 0 866 1000 866 500 0")
+</template>
+
 <style scoped>
 .octa {
   fill: #00ff55;
@@ -7,7 +40,7 @@
   stroke-width: 3px;
 }
 
-div.octahedron {
+.octahedron {
   font-size: 18px;
   transform-style: preserve-3d;
   perspective: 900000px;
@@ -84,36 +117,3 @@ div.octahedron {
   }
 }
 </style>
-
-<template lang="pug">
-.flex.flex-col.opacity-95
-  .octahedron
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-    span
-      svg(viewBox="0 0 1000 866")
-        use(href="#octa")
-  svg#octaico(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1000 866")
-    defs
-      title Octa
-      polygon#octa.octa(points="500 0 0 866 1000 866 500 0")
-</template>

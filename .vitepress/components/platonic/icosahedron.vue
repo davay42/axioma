@@ -2,67 +2,47 @@
 .flex.flex-col.opacity-95
   .d20
     .cap-top
-      .side.one
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.two
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.three
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.four
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.five
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-    .side.six
-      svg(viewBox="0 0 1000 866")
+      svg.side.one(viewBox="0 0 1000 866")
         use(href="#trico")
-    .side.seven
-      svg(viewBox="0 0 1000 866")
+      svg.side.two(viewBox="0 0 1000 866")
         use(href="#trico")
-    .side.eight
-      svg(viewBox="0 0 1000 866")
+      svg.side.three(viewBox="0 0 1000 866")
         use(href="#trico")
-    .side.nine
-      svg(viewBox="0 0 1000 866")
+      svg.side.four(viewBox="0 0 1000 866")
         use(href="#trico")
-    .side.ten
-      svg(viewBox="0 0 1000 866")
+      svg.side.five(viewBox="0 0 1000 866")
         use(href="#trico")
-    .side.eleven
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.twelve
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.thirteen
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.fourteen
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.fifteen
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
+    svg.side.six(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.seven(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.eight(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.nine(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.ten(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.eleven(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.twelve(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.thirteen(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.fourteen(viewBox="0 0 1000 866")
+      use(href="#trico")
+    svg.side.fifteen(viewBox="0 0 1000 866")
+      use(href="#trico")
     .cap-bottom
-      .side.sixteen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.seventeen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.eighteen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.nineteen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.twenty
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
+      svg.side.sixteen(viewBox="0 0 1000 866")
+        use(href="#trico")
+      svg.side.seventeen(viewBox="0 0 1000 866")
+        use(href="#trico")
+      svg.side.eighteen(viewBox="0 0 1000 866")
+        use(href="#trico")
+      svg.side.nineteen(viewBox="0 0 1000 866")
+        use(href="#trico")
+      svg.side.twenty(viewBox="0 0 1000 866")
+        use(href="#trico")
   svg#Layer_1(data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1000 866")
     defs
       polygon#trico.cls-1(points="500 0 0 866 1000 866 500 0")
@@ -121,7 +101,7 @@
   position: absolute;
   width: 5em;
 }
-.side svg {
+.side {
   transform: scale(1.02);
 }
 .d20 .cap-top {
