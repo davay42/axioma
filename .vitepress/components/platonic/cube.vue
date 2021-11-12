@@ -5,16 +5,14 @@ div.cube,
 }
 
 .cube {
-  perpective: 900000px;
+  perpective: 9000px;
   top: calc(50% - 5em);
   left: calc(50% - 5em);
   transform-style: preserve-3d;
-  transform: none;
+  isolation: isolate;
+  transform: translateZ(200);
   transition: 1s;
-}
-.cube {
   transform-origin: 50% 50%;
-
   animation: r 20s infinite normal both;
 }
 
@@ -36,6 +34,7 @@ div.cube,
 .cube__face {
   width: 20em;
   height: 20em;
+  z-index: 10;
   background-color: rgba(255, 255, 0, 0.2);
   border-color: black;
   border-width: 1px;
@@ -62,11 +61,12 @@ div.cube,
 </style>
 
 <template lang="pug">
-.cube
-  .cube__face
-  .cube__face
-  .cube__face
-  .cube__face
-  .cube__face
-  .cube__face
+.opacity-95
+  .cube
+    .cube__face
+    .cube__face
+    .cube__face
+    .cube__face
+    .cube__face
+    .cube__face
 </template>

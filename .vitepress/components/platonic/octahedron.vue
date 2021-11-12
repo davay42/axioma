@@ -86,7 +86,7 @@ div.octahedron {
 </style>
 
 <template lang="pug">
-.flex.flex-col
+.flex.flex-col.opacity-95
   .octahedron
     span
       svg(viewBox="0 0 1000 866")

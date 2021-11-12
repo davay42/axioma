@@ -1,3 +1,74 @@
+<template lang="pug">
+.flex.flex-col.opacity-95
+  .d20
+    .cap-top
+      .side.one
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.two
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.three
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.four
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.five
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+    .side.six
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.seven
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.eight
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.nine
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.ten
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.eleven
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.twelve
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.thirteen
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.fourteen
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .side.fifteen
+      svg(viewBox="0 0 1000 866")
+        use(href="#trico")
+    .cap-bottom
+      .side.sixteen
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.seventeen
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.eighteen
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.nineteen
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+      .side.twenty
+        svg(viewBox="0 0 1000 866")
+          use(href="#trico")
+  svg#Layer_1(data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1000 866")
+    defs
+      polygon#trico.cls-1(points="500 0 0 866 1000 866 500 0")
+</template>
+
+
 <style scoped>
 @keyframes spin {
   0% {
@@ -132,73 +203,3 @@
   transform: rotateY(288deg) rotateX(-53deg) rotateZ(180deg) translateZ(2.938em);
 }
 </style>
-
-<template lang="pug">
-.flex.flex-col
-  .d20
-    .cap-top
-      .side.one
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.two
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.three
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.four
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.five
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-    .side.six
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.seven
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.eight
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.nine
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.ten
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.eleven
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.twelve
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.thirteen
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.fourteen
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .side.fifteen
-      svg(viewBox="0 0 1000 866")
-        use(href="#trico")
-    .cap-bottom
-      .side.sixteen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.seventeen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.eighteen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.nineteen
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-      .side.twenty
-        svg(viewBox="0 0 1000 866")
-          use(href="#trico")
-  svg#Layer_1(data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1000 866")
-    defs
-      polygon#trico.cls-1(points="500 0 0 866 1000 866 500 0")
-</template>

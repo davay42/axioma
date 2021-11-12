@@ -1,4 +1,7 @@
 <script setup>
+import { useFullscreen } from '@vueuse/core'
+const { toggle } = useFullscreen();
+
 </script>
 
 <template lang="pug">
@@ -43,25 +46,30 @@
     img(src="/anim/11-metatron.svg")
     .text Metatron's cube
   .slide#s12
-    tetrahedron
+    platonic-tetrahedron
     .text Tetrahedron
   .slide#s13
-    cube
+    platonic-cube
     .text Cube
   .slide#s14
-    octahedron
+    platonic-octahedron
     .text Octahedron
   .slide#s15
-    icosahedron
+    platonic-icosahedron
     .text Icosahedron
   .slide#s16
-    dodecahedron
+    platonic-dodecahedron
     .text Dodecahedron
   .slide#s17
     img(src="/logo/contour-low_animated.svg")
     .flex.text-8xl
       a.link(href="https://github.com/davay42/axioma.center" target="_blank")
         la-github
+  .rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-10.cursor-pointer.transition-all.duration-200.ease(
+    class="hover:opacity-100"
+    @click="toggle()"
+  )
+    la-expand
 </template>
 
 

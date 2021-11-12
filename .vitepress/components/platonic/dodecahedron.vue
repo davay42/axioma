@@ -1,5 +1,5 @@
 <template lang="pug">
-.flex.flex-col
+.flex.flex-col.opacity-95
   svg#Layer_1(version="1.1", xmlns="http://www.w3.org/2000/svg", xlink="http://www.w3.org/1999/xlink", x="0px", y="0px", height="0", width="0", space="preserve")
     polygon#pentagon.st0(points="12.4,0 0.6,8.5 5.1,22.4 19.6,22.4 24.1,8.5 ")
   #dodecahedron

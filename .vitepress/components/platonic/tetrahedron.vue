@@ -1,3 +1,23 @@
+<template lang="pug">
+.tetra.opacity-95
+  .face1
+    svg(viewBox="0 0 1000 866")
+      use(href="#trigon")
+  .face2
+    svg(viewBox="0 0 1000 866")
+      use(href="#trigon")
+  .face3
+    svg(viewBox="0 0 1000 866")
+      use(href="#trigon")
+  .face4
+    svg(viewBox="0 0 1000 866")
+      use(href="#trigon")
+svg#tri(data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1000 866")
+  defs
+    title Polygon
+    polygon#trigon.trigon(points="500 0 0 866 1000 866 500 0")
+</template>
+
 <style scoped>
 .trigon {
   fill: red;
@@ -57,24 +77,3 @@
   }
 }
 </style>
-
-<template lang="pug">
-
-.tetra
-  .face1
-    svg(viewBox="0 0 1000 866")
-      use(href="#trigon")
-  .face2
-    svg(viewBox="0 0 1000 866")
-      use(href="#trigon")
-  .face3
-    svg(viewBox="0 0 1000 866")
-      use(href="#trigon")
-  .face4
-    svg(viewBox="0 0 1000 866")
-      use(href="#trigon")
-svg#tri(data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 1000 866")
-  defs
-    title Polygon
-    polygon#trigon.trigon(points="500 0 0 866 1000 866 500 0")
-</template>
