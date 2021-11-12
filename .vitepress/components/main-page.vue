@@ -1,7 +1,7 @@
 <script setup>
 import { useFullscreen } from '@vueuse/core'
 const { toggle } = useFullscreen();
-
+const first = ref();
 </script>
 
 <template lang="pug">
@@ -14,8 +14,10 @@ const { toggle } = useFullscreen();
           la-github
         a.link(href="https://ko-fi.com/B0B44CM90" target="_blank")
           simple-icons-kofi
-      la-angle-down.mt-32.animate-bounce
-  .slide#s1
+      la-angle-down.mt-32.animate-bounce(
+        @click="first.scrollIntoView({ behavior: 'smooth' })"
+      )
+  .slide#s1(ref="first")
     img(src="/anim/1-dot.svg")
     .text Dot
   .slide#s2
@@ -70,6 +72,10 @@ const { toggle } = useFullscreen();
         la-github
       a.link(href="https://ko-fi.com/B0B44CM90" target="_blank")
         simple-icons-kofi
+    .flex.items-center.text-xs.absolute.bottom-2 
+      la-creative-commons-pd-alt.mr-2
+      span.mr-2 2016-2021  
+      span Public Domain 
   .rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-10.cursor-pointer.transition-all.duration-200.ease(
     class="hover:opacity-100"
     @click="toggle()"
