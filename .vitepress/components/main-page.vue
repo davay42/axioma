@@ -88,7 +88,8 @@ const first = ref();
 
 <style scoped>
 .slide {
-  @apply snap-start flex flex-col items-center justify-center h-100vh p-4 relative;
+  scroll-snap-align: start;
+  @apply flex flex-col items-center justify-center h-100vh p-4 relative;
   &:nth-child(2n) {
     @apply bg-dark-100;
   }
