@@ -10,7 +10,6 @@
 <style>
 html {
   scroll: smooth;
-  scroll-snap-type: y mandatory;
   @apply bg-dark-200 max-h-100vh overflow-y-scroll;
 }
 body {
