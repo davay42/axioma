@@ -74,7 +74,7 @@ const first = ref();
         simple-icons-kofi
     .flex.items-center.text-xs.absolute.bottom-2 
       la-creative-commons-pd-alt.mr-2
-      span.mr-2 2016-2021  
+      span.mr-2 2016-present
       span Public Domain 
   .rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-10.cursor-pointer.transition-all.duration-200.ease(
     class="hover:opacity-100"

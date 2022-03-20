@@ -16,7 +16,7 @@ div.cube,
 }
 
 .cube {
-  perpective: 9000px;
+  perspective: 9000px;
   top: calc(50% - 5em);
   left: calc(50% - 5em);
   transform-style: preserve-3d;
