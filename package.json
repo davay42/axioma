@@ -1,44 +1,46 @@
 {
-  "name": "axioma.center",
-  "version": "1.1.1",
-  "description": "Animated geometry",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vitepress dev ",
-    "build": "vitepress build ",
-    "serve": "vitepress serve --port 5510",
-    "deploy": "sh deploy.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davay42/axioma.center.git"
-  },
-  "keywords": [
-    "geometry",
-    "animation",
-    "svg"
-  ],
-  "author": "davay",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/davay42/axioma.center/issues"
-  },
-  "homepage": "https://github.com/davay42/axioma.center#readme",
-  "dependencies": {
-    "@vueuse/core": "8.1.2",
-    "vue": "^3.2.31"
-  },
-  "devDependencies": {
-    "@iconify/json": "^2.1.17",
-    "@types/node": "^17.0.21",
-    "esbuild-register": "^3.3.2",
-    "pug": "^3.0.2",
-    "unplugin-auto-import": "^0.6.6",
-    "unplugin-icons": "^0.14.0",
-    "unplugin-vue-components": "^0.18.3",
-    "vite": "^2.8.6",
-    "vite-plugin-windicss": "^1.8.3",
-    "vitepress": "^0.22.3",
-    "windicss": "^3.5.1"
-  }
+	"name": "axioma.center",
+	"version": "1.1.1",
+	"description": "Animated geometry",
+	"keywords": [
+		"geometry",
+		"animation",
+		"svg"
+	],
+	"homepage": "https://github.com/davay42/axioma.center#readme",
+	"bugs": {
+		"url": "https://github.com/davay42/axioma.center/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/davay42/axioma.center.git"
+	},
+	"license": "MIT",
+	"author": "davay",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"build": "vitepress build ",
+		"deploy": "sh deploy.sh",
+		"dev": "vitepress dev ",
+		"serve": "vitepress serve --port 5510"
+	},
+	"dependencies": {
+		"@vueuse/core": "9.3.0",
+		"vue": "^3.2.41",
+		"vue-demi": "0.13.11"
+	},
+	"devDependencies": {
+		"@iconify/json": "^2.1.122",
+		"@types/node": "^18.11.0",
+		"esbuild-register": "^3.3.3",
+		"pug": "^3.0.2",
+		"unplugin-auto-import": "^0.11.2",
+		"unplugin-icons": "^0.14.12",
+		"unplugin-vue-components": "^0.22.8",
+		"vite": "^3.1.8",
+		"vite-plugin-windicss": "^1.8.8",
+		"vitepress": "1.0.0-alpha.21",
+		"windicss": "^3.5.6"
+	}
 }
