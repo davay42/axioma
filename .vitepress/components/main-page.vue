@@ -72,10 +72,10 @@ const first = ref();
         la-github
       a.link(href="https://ko-fi.com/B0B44CM90" target="_blank")
         simple-icons-kofi
-    .flex.items-center.text-xs.absolute.bottom-2 
-      la-creative-commons-pd-alt.mr-2
-      span.mr-2 2016-present
-      span Public Domain 
+    .flex.gap-2
+      la-creative-commons-pd-alt.pr-2
+      .px-2 &nbsp;2016-present&nbsp;
+      .font-bold Public Domain
   .rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-10.cursor-pointer.transition-all.duration-200.ease(
     class="hover:opacity-100"
     @click="toggle()"
@@ -89,16 +89,20 @@ const first = ref();
 <style scoped>
 .slide {
   @apply flex flex-col items-center justify-center h-100vh p-4 relative;
+
   &:nth-child(2n) {
     @apply bg-dark-100;
   }
+
   & img {
     @apply max-w-full max-h-100vh;
   }
 }
+
 .link {
-  @apply text-white opacity-10 p-4 hover:opacity-100 transition-all duration-300 ease-in-out;
+  @apply text-white opacity-10 p-4 hover: opacity-100 transition-all duration-300 ease-in-out;
 }
+
 .text {
   @apply absolute top-4 left-4 text-sm opacity-50;
 }

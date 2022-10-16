@@ -8,7 +8,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 export default defineConfig({
 
   plugins: [
-    Icons(),
+    Icons({}),
     AutoImport({   
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
@@ -20,7 +20,7 @@ export default defineConfig({
       ], }),
     WindiCSS({
       scan: {
-        dirs: ['.vitepress', './'],
+        dirs: ['.vitepress/'],
         include: ['index.md'],
         exclude: ['**/examples/**/*', '/node_modules/'],
         fileExtensions: ['vue', 'ts', 'md'],
