@@ -1,11 +1,10 @@
-import { defineConfig } from 'vite'
 import Components from 'unplugin-vue-components/vite'
 import Unocss from 'unocss/vite'
 import { transformerDirectives, presetIcons, presetUno, extractorSplit } from 'unocss'
 import extractorPug from '@unocss/extractor-pug'
 import AutoImport from 'unplugin-auto-import/vite'
 
-export default defineConfig({
+export default {
 
   plugins: [
     AutoImport({
@@ -55,6 +54,6 @@ export default defineConfig({
       '@vueuse/core',
     ],
   },
-})
+}
 
 
