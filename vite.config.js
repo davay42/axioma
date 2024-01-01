@@ -28,8 +28,8 @@ export default {
     }),
     Components({
       dirs: [
-        '../.vitepress/theme/components',
-        '../components',
+        '.vitepress/theme/components',
+        'components',
       ],
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,

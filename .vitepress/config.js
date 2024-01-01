@@ -10,13 +10,16 @@ export const metaData = {
   site,
   locale: "en",
   icon: "/logo/gray.svg",
-  author: "Axioma.center",
+  author: "davay42",
   tags: "geometry, animations, svg, css, platonic solid",
 };
 
 
 export default defineConfig({
-  srcDir: 'content',
+  srcExclude: ['README.md'],
+  sitemap: {
+    hostname: 'https://axioma.defucc.me'
+  },
   title: metaData.title,
   description: metaData.description,
   lang: metaData.locale,
