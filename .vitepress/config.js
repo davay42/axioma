@@ -16,6 +16,7 @@ export const metaData = {
 
 
 export default defineConfig({
+  outDir: 'dist',
   srcExclude: ['README.md'],
   sitemap: {
     hostname: 'https://axioma.defucc.me'
