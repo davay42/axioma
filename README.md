@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/davay42/axioma/master/content/public/logo/contour-low_animated.svg)
+![](https://raw.githubusercontent.com/davay42/axioma/master/public/logo/contour-low_animated.svg)
 
 ## Basic space geometry features animated
 
