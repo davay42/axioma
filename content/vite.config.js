@@ -1,15 +1,14 @@
 import { defineConfig } from 'vite'
 import Components from 'unplugin-vue-components/vite'
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
-import WindiCSS from 'vite-plugin-windicss'
+import Unocss from 'unocss/vite'
+import { transformerDirectives, presetIcons, presetUno, extractorSplit } from 'unocss'
+import extractorPug from '@unocss/extractor-pug'
 import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
 
   plugins: [
-    Icons({}),
-    AutoImport({   
+    AutoImport({
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
         /\.vue$/, /\.vue\?vue/, // .vue
@@ -17,24 +16,35 @@ export default defineConfig({
       ],
       imports: [
         'vue',
-      ], }),
-    WindiCSS({
-      scan: {
-        dirs: ['.vitepress/'],
-        include: ['index.md'],
-        exclude: ['**/examples/**/*', '/node_modules/'],
-        fileExtensions: ['vue', 'ts', 'md'],
-      },
+      ],
+    }),
+    Unocss({
+      transformers: [
+        transformerDirectives(),
+      ],
+      presets: [
+        presetIcons({
+          cdn: 'https://esm.sh/',
+          scale: 1.2,
+          extraProperties: {
+            'vertical-align': 'middle'
+          }
+        }),
+        presetUno(),
+      ],
+      extractors: [
+        extractorSplit,
+        extractorPug()
+      ]
     }),
     Components({
       dirs: [
-        '.vitepress/theme/components',
-        '.vitepress/components',
+        '../.vitepress/theme/components',
+        '../components',
       ],
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,
       globalNamespaces: ['global'],
-      resolvers: [IconsResolver({prefix: false, })],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       exclude: [/node_modules/, /\.git/],
     }),

@@ -1,7 +1,7 @@
-import 'virtual:windi.css'
-
-import DefaultTheme from 'vitepress/theme'
 import Layout from './layout.vue'
+
+import '@unocss/reset/tailwind.css'
+import 'uno.css'
 
 const theme = {
   Layout,

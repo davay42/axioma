@@ -9,9 +9,10 @@
 
 <style>
 html {
-  scroll: smooth;
+  scroll-behavior: smooth;
   @apply bg-dark-200 max-h-100vh overflow-y-scroll;
 }
+
 body {
   color: white;
 }
