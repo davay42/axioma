@@ -1,11 +1,43 @@
-<script setup>
-import { useFullscreen } from '@vueuse/core'
-const { toggle, isSupported } = useFullscreen();
-const first = ref();
+<script client>
+document.getElementById('arrow').addEventListener('click', () => {
+  console.log('clicked')
+  document.getElementById('s1').scrollIntoView({ behavior: 'smooth' })
+})
+
+let isFullscreen = false
+
+document.getElementById("full").addEventListener('click', () => {
+  var elem = document.documentElement;
+
+  if (!isFullscreen) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+    isFullscreen = true
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
+    isFullscreen = false
+  }
+
+
+})
+
 </script>
 
 <template lang="pug">
 .slides
+  #full.rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-10.cursor-pointer.transition-all.duration-200.ease.hover-opacity-100
+    .i-la-expand
   .slide
     img(src="/logo/contour-low_animated.svg")
     .flex.flex-col.text-4xl.items-center
@@ -14,9 +46,7 @@ const first = ref();
           .i-la-github
         a.link(href="https://ko-fi.com/B0B44CM90" target="_blank")
           .i-simple-icons-kofi
-      .i-la-angle-down.mt-32.animate-bounce.cursor-pointer(
-        @click="first.scrollIntoView({ behavior: 'smooth' })"
-      )
+      .i-la-angle-down.mt-32.animate-bounce.cursor-pointer#arrow
   .slide#s1(ref="first")
     img(src="/anim/1-dot.svg")
     .text Dot
@@ -76,12 +106,7 @@ const first = ref();
       .i-la-creative-commons-pd-alt.pr-2
       .px-2 &nbsp;2016-present&nbsp;
       .font-bold Public Domain
-  .rounded.p-2.opacity-50.text-2xl.fixed.bottom-0.right-0.z-10.cursor-pointer.transition-all.duration-200.ease(
-    class="hover:opacity-100"
-    @click="toggle()"
-    v-if="isSupported"
-  )
-    la-expand
+
 </template>
 
 

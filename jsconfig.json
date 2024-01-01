@@ -1,0 +1,10 @@
+{
+  "include": [
+    "**/*.vue"
+  ],
+  "vueCompilerOptions": {
+    "plugins": [
+      "@vue/language-plugin-pug"
+    ]
+  }
+}

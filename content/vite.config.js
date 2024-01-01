@@ -2,21 +2,11 @@ import Components from 'unplugin-vue-components/vite'
 import Unocss from 'unocss/vite'
 import { transformerDirectives, presetIcons, presetUno, extractorSplit } from 'unocss'
 import extractorPug from '@unocss/extractor-pug'
-import AutoImport from 'unplugin-auto-import/vite'
 
 export default {
 
   plugins: [
-    AutoImport({
-      include: [
-        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        /\.vue$/, /\.vue\?vue/, // .vue
-        /\.md$/, // .md  
-      ],
-      imports: [
-        'vue',
-      ],
-    }),
+
     Unocss({
       transformers: [
         transformerDirectives(),
