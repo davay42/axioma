@@ -19,6 +19,7 @@
 	"author": "davay",
 	"type": "module",
 	"main": "index.js",
+	"packageManager": "pnpm@9.14.4",
 	"scripts": {
 		"build": "vitepress build --mpa",
 		"deploy": "sh deploy.sh",
