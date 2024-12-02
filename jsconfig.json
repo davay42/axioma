@@ -3,6 +3,9 @@
     "**/*.vue"
   ],
   "vueCompilerOptions": {
+    "vitePressExtensions": [
+      ".md"
+    ],
     "plugins": [
       "@vue/language-plugin-pug"
     ]
